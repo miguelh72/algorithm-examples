@@ -1,0 +1,19 @@
+{
+  "name": "sorting-algorithms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A collection of my implementation of various types of algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "algorithms",
+    "data structures"
+  ],
+  "author": "Miguel Hernandez (miguelh72@outlook.com)",
+  "dependencies": {
+    "@types/jest": "^27.0.0",
+    "jest": "^27.0.6"
+  }
+}
