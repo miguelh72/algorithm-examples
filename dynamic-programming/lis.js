@@ -7,7 +7,7 @@
     Optimal solution has O(n * log(n)) time and O(n) space complexity.
 */
 
-// O(n * log(n))
+// O(n^2)
 function lis(numArray) {
     if (numArray.length === 0) { return 0; }
     // maintain array of lowest nth LIS where array index + 1 is length of LIS
@@ -17,7 +17,7 @@ function lis(numArray) {
         const nextValue = numArray.shift();
         // does the value replace 0th case?
         if (nextValue < lisArray[0][0]) { lisArray[0][0] = nextValue; }
-        for (let i = 0; i < lisArray.length; i++ ) { // O(log(n))
+        for (let i = 0; i < lisArray.length; i++ ) { // O(n)
             // each nth LIS tail has to be checked to see if value can be added at end.
             if (nextValue > lisArray[i][lisArray[i].length - 1]) {
                 // If we can create an n+1 LIS then we must check the last value of this list 

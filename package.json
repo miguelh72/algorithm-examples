@@ -2,7 +2,7 @@
   "name": "sorting-algorithms",
   "private": true,
   "version": "1.0.0",
-  "description": "A collection of my implementation of various types of algorithms.",
+  "description": "My implementation of various types of algorithms.",
   "main": "index.js",
   "scripts": {
     "test": "jest"
