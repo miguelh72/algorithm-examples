@@ -4,13 +4,13 @@ My implementation of various types of algorithms.
 
 ## Dynamic Programming
 
--   **Longest increasing subsequence problem**, O(2^n) time complexity and O(n) space complexity (better is possible)
--   **Subset sum problem**, O(2^n) time and O(n) space complexity (better is possible)
+-   **longest increasing subsequence problem**, O(2^n) time complexity and O(n) space complexity (better is possible)
+-   **subset sum problem**, O(2^n) time and O(n) space complexity (better is possible)
 
 ## Mathematics
 
--   **Primality testing**, O(sqrt(n)) time complexity and O(1) space complexity, deterministic approach for large n
--   **Permutations**, O(n!) time and space complexity.
+-   **primality testing**, O(sqrt(n)) time complexity and O(1) space complexity, deterministic approach for large n
+-   **permutations**, O(n!) time and space complexity.
 
 ## Searching
 
