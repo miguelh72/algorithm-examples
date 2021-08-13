@@ -13,7 +13,7 @@ function gridTraveler(n, m, memo = {}) {
     // if either n or m is equal to one, return one
     if (n === 1 || m === 1) { return 1; }
     // if string [n,m] exist as key in memo, return the value
-    const key = [n, m].toString();
+    const key = (n <= m) ? [n, m].toString() : [m, n].toString(); // allowed by problem symmetry
     if (key in memo) { return memo[key]; }
     // create entry in memo with key [n,m] whose value is the sum of the recursive call to (n-1, m) and (n, m-1)
     memo[key] = gridTraveler(n - 1, m) + gridTraveler(n, m - 1);
