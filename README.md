@@ -4,6 +4,7 @@ My implementation of various types of algorithms.
 
 ## Dynamic Programming
 
+-   **2D grid traveler**, O(n\*m) time and space complexity
 -   **longest increasing subsequence problem**, O(2^n) time complexity and O(n) space complexity (better is possible)
 -   **subset sum problem**, O(2^n) time and O(n) space complexity (better is possible)
 
