@@ -1,6 +1,6 @@
 // If input array is sorted, then search will work with worst case O(log(n))
 
-function bisectionSearch(sortedArray, element, left = 0, right = sortedArray.length) {
+function binarySearch(sortedArray, element, left = 0, right = sortedArray.length) {
     // termination condition: If only one element between left and right, check that element and return it or return null
     if (right - left === 0) { return null; }
     if (right - left === 1) {
@@ -15,7 +15,7 @@ function bisectionSearch(sortedArray, element, left = 0, right = sortedArray.len
         left = median;
     }
     // recursively call bisectionSearch with new search indices
-    return bisectionSearch(sortedArray, element, left, right);
+    return binarySearch(sortedArray, element, left, right);
 }
 
-module.exports = bisectionSearch;
+module.exports = binarySearch;

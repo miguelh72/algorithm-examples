@@ -14,7 +14,7 @@ My implementation of various types of algorithms.
 
 ## Searching
 
--   **bisection search**, worst case on ordered arrays is O(log(n)) time and O(1) space complexity
+-   **binary search**, worst case on ordered arrays is O(log(n)) time and O(1) space complexity
 -   **depth-first search**, worst case O(n + e) where e is the number of edges in tree and O(n) space complexity
 -   **breadth-first search**, worst case O(n + e) where e is the number of edges in tree and O(n) space complexity
 
