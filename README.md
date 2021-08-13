@@ -4,8 +4,8 @@ My implementation of various types of algorithms.
 
 ## Dynamic Programming
 
--   **Longest increasing subsequence problem**, O(n^2) time complexity and O(n) space complexity (better is possible)
--   **Subset sum problem**, O(n^2) time and O(n) space complexity (better is possible)
+-   **Longest increasing subsequence problem**, O(2^n) time complexity and O(n) space complexity (better is possible)
+-   **Subset sum problem**, O(2^n) time and O(n) space complexity (better is possible)
 
 ## Mathematics
 
