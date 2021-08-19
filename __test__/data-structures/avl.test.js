@@ -63,7 +63,6 @@ test('Instantiation and single node insertion', () => {
     expect(avlTreeRoot.right.balanceFactor).toBe(0);
 });
 
-// test building larger balanced trees
 test('larger balanced trees', () => {
     // build 3 node tree
     /*
@@ -116,7 +115,6 @@ test('larger balanced trees', () => {
     expect(avlTree.left.balanceFactor).toBe(0);
 });
 
-// test building unbalanced trees
 test('building small unbalanced trees', () => {
     // build 3 node left-heavy tree: left-left case
     /*
@@ -211,7 +209,6 @@ test('building small unbalanced trees', () => {
     expect(avlTree.left.balanceFactor).toBe(0);
 });
 
-// test large unbalanced tree
 test('build larger unbalanced trees', () => {
     /*  1                                                                       4
             2                                                           2               5
@@ -285,5 +282,32 @@ test('build larger unbalanced trees', () => {
     expect(avlTree.right.right.right).toBeNull();
 });
 
-// test repeat collisions
+test('repeated values', () => {
+    // build tree with repeated values
+    /*
+                      3
+            2                   4
+                3           4       5
+                        4
+    */
+    avlTree = new Avl(5);
+    avlTree.insert(4);
+    avlTree.insert(3);
+    avlTree.insert(2);
+    avlTree.insert(4);
+    avlTree.insert(3);
+    avlTree.insert(4);
 
+    expect(avlTree.value).toBe(3);
+
+    expect(avlTree.right.value).toBe(4);
+    expect(avlTree.right.left.value).toBe(4);
+    expect(avlTree.right.left.left.value).toBe(4);
+    expect(avlTree.right.right.value).toBe(5);
+
+    expect(avlTree.left.value).toBe(2);
+    expect(avlTree.left.right.value).toBe(3);
+
+    expect(avlTree.height).toBe(3);
+    expect(avlTree.balanceFactor).toBe(1);
+});
