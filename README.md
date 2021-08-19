@@ -1,6 +1,10 @@
 # algorithm-examples
 
-My implementation of various types of algorithms.
+My implementation of various types of algorithms and data structures.
+
+## Data Structures
+
+-   **AVL tree**, O(log(n)) insertion and O(n) space complexity
 
 ## Dynamic Programming
 
@@ -16,8 +20,8 @@ My implementation of various types of algorithms.
 ## Searching
 
 -   **binary search**, worst case on ordered arrays is O(log(n)) time and O(1) space complexity
--   **depth-first search**, worst case O(n + e) where e is the number of edges in tree and O(n) space complexity
--   **breadth-first search**, worst case O(n + e) where e is the number of edges in tree and O(n) space complexity
+-   **depth-first search**, worst case O(n + e) where e is the number of edges in tree and O(n) space complexity (see nodetree data structure)
+-   **breadth-first search**, worst case O(n + e) where e is the number of edges in tree and O(n) space complexity (see nodetree data structure)
 
 ## Sorting
 
